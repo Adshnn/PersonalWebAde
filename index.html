@@ -1,474 +1,391 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ade Siahaan</title>
-    <link href="src/output.css" rel="stylesheet">
+    <title>Ade Siahaan - Portfolio</title>
+    <!-- Matikan sementara output.css lama Anda -->
+    <!-- <link href="src/output.css" rel="stylesheet"> -->
+    
+    <!-- Tambahkan baris ini untuk memuat Tailwind langsung dari internet -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-stone-100">
-    <!-- nav star --> 
-     <!-- relative flex max-w-7xl items-center justify-between p-6 lg:px- -->
-     <header class="bg-transparent absolute top-0 left-0 w-full flex
-     items-center z-10" >
-     <div class="container">
-        <div class="flex intem-center justify-between relative">
-            <div class="px-4">
-                <a href="#home" class="font-bold text-lg text-primary
-                block py-6">AD</a>
-            </div>
-            <div class="flext items-center px-4">
-                <button id="ham" name="ham" type="button"
-                class="block absolute right-4 py-6 lg:hidden">
-                    <span class="ham-line transition duration-300
-                    ease-in-out origin-top-left"></span>
-                    <span class="ham-line transition duration-300
-                    ease-in-out"></span>
-                    <span class="ham-line transition duration-300
-                    ease-in-out origin-bottom-left"></span>
-                </button>
-
-                <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full 
-                lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:p-6 lg:px-6">
-                    <ul class="block lg:flex">
-                        <li class="group">
-                            <a href="#home" class="text-base text-dark py-2 ms-8 flex group-hover:text-blue-700 "> Home</a>
-                        </li>
-                        <li class="group">
-                            <a href="#Projects" class="text-base text-dark py-2 ms-8 flex group-hover:text-blue-700"> Projects</a>
-                        </li>
-                        <li class="group">
-                            <a href="#Certificates" class="text-base text-dark py-2 ms-8 flex group-hover:text-blue-700">Certificates</a>
-                        </li>
-                        <!-- <li class="group">
-                            <a href="#About" class="text-base text-dark py-2 ms-8 flex group-hover:text-blue-700"> About</a>
-                        </li> -->
-                    </ul>
-                </nav>
-
-            </div>
-        </div>
-     </div>
-     </header>
-    <!-- nav end -->
-
-    <!-- hero start -->
-     <!-- npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
-     <section id="home" class="container pt-36 mx-auto">
-        <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12
-            xl:mx-auto">
-            <div class="w-full self-center px-4 lg:w-1/2">
-                <h1 class="font-semibold text-dark text-2xl
-                ">Hii everyone 👋 my name is  
-                <span class="block font-bold text-dark text-4xl
-                mt-1 lg:text-5xl">Ade Siahaan</span>
-                    </h1>
-                    <!-- <span class="block font-bold text-dark text-4xl
-                    mt-1 lg:text-5xl">Ade</span> -->
-                <p  class="font-medium text-secondary mb-10 leading-relaxed">and I am a bachelor's student majoring in Information Systems.</p>
-
-                <div class="mt-5">
-                    <div class="inline-block mr-3 mb-4">
-                        <a href="/dist/doc/Resume-AdeYohanaAzekaSiahaan.pdf" target="_blank"
-                        class="text-base font-semibold text-white bg-primary py-4 px-7 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
-                            My Resume
-                        </a>
-                    </div>
-
-                    <div class="inline-block mt-10">
-                        <a href="mailto:adeshnn17@gmail.com" 
-                        class="text-base font-semibold text-white bg-primary py-4 px-7 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
-                            Send me a Message
-                        </a>
-                    </div>
+<body class="bg-stone-50 text-slate-800 font-sans antialiased">
+    <!-- Header / Navbar Start -->
+    <header class="bg-white/80 backdrop-blur-md fixed top-0 left-0 w-full flex items-center z-50 border-b border-slate-200">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex items-center justify-between relative">
+                <div class="py-4">
+                    <a href="#home" class="font-extrabold text-2xl text-blue-600 tracking-wider">AD.</a>
                 </div>
-            </div>
-            <div class="w-full self-en px-4 lg:w-1/2">
-                <div class="relative mt-10 lg:mt-9 lg:right-0">
-                    <img width="400" src="dist/img/potoade.png" alt="Ade" class="max-w-full mx-auto" 
-                    />
-                    <span class="absolute -bottom-20 -z-10 left-1/2 -translate-x-1/2 md:scale-150 md:bottom-10">
-                        <!-- <svg width="300" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#dc2626" d="M56.8,-59.2C70.1,-43.5,75,-21.8,70.6,-4.3C66.3,13.1,52.8,26.2,39.5,42.4C26.2,58.7,13.1,78.1,-4.5,82.6C-22.1,87.1,-44.2,76.7,-58.1,60.5C-72.1,44.2,-77.8,22.1,-74.2,3.6C-70.5,-14.8,-57.5,-29.7,-43.6,-45.3C-29.7,-61,-14.8,-77.4,3.5,-80.9C21.8,-84.4,43.5,-74.8,56.8,-59.2Z" 
-                            transform="translate(100 100)  scale(1)" 
-                            />
-                          </svg> -->
-                          <svg width="300" height="400" viewBox="0 0 292.5 292.5" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" stop-color="#DC2626" stop-opacity="1" />
-                                <stop offset="100%" stop-color="#0F62FE" stop-opacity="1" />
-                              </linearGradient>
-                            </defs><path d="M146.25,274.6843101968989C180.19745057211148,272.61227728280096,211.89363693541208,259.9612079636146,236.78679095818993,236.78679095818993C262.7087521482059,212.65460032994787,284.3576556921751,181.66593989316232,284.2096761718858,146.25C284.0621494772881,110.94243488358805,261.32724682721573,81.10127414475599,236.03335370405776,56.46664629594223C211.14907738904284,32.230958917861486,180.9664883067105,10.719432928481806,146.25000000000003,11.88613342994359C112.33683042137801,13.025837181197968,85.80314724904818,37.82564192282397,62.30505070026809,62.305050700268055C39.445587137258855,86.11915631645434,20.511132512430464,113.39916458287813,17.27241160988342,146.24999999999997C13.67788783510873,182.70979770445484,17.982106370052385,222.70609051506793,43.94268337749687,248.55731662250307C69.86993084624271,274.3753535816112,109.72844340528482,276.91345748375016,146.25,274.6843101968989" fill="url(#gradient)" />
-                          </svg>
-                    </span>
+                <div class="flex items-center">
+                    <button id="ham" name="ham" type="button" class="block absolute right-0 lg:hidden">
+                        <span class="w-[30px] h-[2px] my-[6px] block bg-slate-800 transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="w-[30px] h-[2px] my-[6px] block bg-slate-800 transition duration-300 ease-in-out"></span>
+                        <span class="w-[30px] h-[2px] my-[6px] block bg-slate-800 transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-0 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none lg:p-0">
+                        <ul class="block lg:flex lg:space-x-8">
+                            <li class="group"><a href="#home" class="text-base text-slate-700 font-medium py-2 mx-8 lg:mx-0 flex group-hover:text-blue-600 transition">Home</a></li>
+                            <li class="group"><a href="#about" class="text-base text-slate-700 font-medium py-2 mx-8 lg:mx-0 flex group-hover:text-blue-600 transition">About</a></li>
+                            <li class="group"><a href="#experience" class="text-base text-slate-700 font-medium py-2 mx-8 lg:mx-0 flex group-hover:text-blue-600 transition">Experience</a></li>
+                            <li class="group"><a href="#projects" class="text-base text-slate-700 font-medium py-2 mx-8 lg:mx-0 flex group-hover:text-blue-600 transition">Projects</a></li>
+                            <li class="group"><a href="#certificates" class="text-base text-slate-700 font-medium py-2 mx-8 lg:mx-0 flex group-hover:text-blue-600 transition">Certificates</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-     </section>
+    </header>
+    <!-- Header End -->
 
-    <!-- hero end -->
-
-    <!-- project start -->
-     <section id="Projects" class="pt-24 pb-10 bg-white">
-        <div class="container">
-            <div class="w-full px-4 border-b-2 border-slate-400">
-                <div class="max-w-xl mb-3 border-s-slate-950">
-                    <h4 class="font-bold uppercase text-left text-primary text-lg mb-2 px-4">Projects</h4>
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-36 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2">
+                    <h1 class="text-base font-semibold text-blue-600 md:text-xl">Hi everyone 👋, I am</h1>
+                    <h2 class="block font-bold text-slate-900 text-4xl mt-2 lg:text-5xl leading-tight">
+                        Ade Yohana Azeka Siahaan
+                    </h2>
+                    <h3 class="font-medium text-slate-500 text-lg md:text-xl mt-3 mb-6">
+                        Information Systems Graduate | Software QA | Web Developer
+                    </h3>
+                    <p class="font-medium text-slate-500 mb-10 leading-relaxed max-w-lg">
+                        Passionate about Software Testing and Web Development. Experienced in ensuring software quality and building robust web applications.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-5">
+                        <a href="/dist/doc/Resume-AdeYohanaAzekaSiahaan.pdf" target="_blank" class="text-base font-semibold text-white bg-blue-600 py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition duration-300">
+                            Download Resume
+                        </a>
+                        <a href="mailto:adeyohanasiahaan@gmail.com" class="text-base font-semibold text-blue-600 bg-blue-50 border border-blue-600 py-3 px-8 rounded-full hover:bg-blue-100 transition duration-300">
+                            Contact Me
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto pt-2 ">
-                <!-- card4 SSC Balige -->
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="relative rounded-md shadow-md overflow-hidden group">
-                        <!-- Gambar -->
-                        <img src="dist/img/P4.jpg" alt="SSC Balige"
-                            class="w-full transition duration-300 group-hover:blur-sm">
-                        <!-- Overlay Hover -->
-                        <div class="absolute inset-0 bg-primary bg-opacity-70 flex items-center justify-center 
-                                    opacity-0 group-hover:opacity-100 transition duration-300 text-dark p-4 text-left">
-                            <div class="space-y-2 text-sm md:text-base">
-                                <span>Teamwork assignment</span>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"/>
-                                        </svg>
-                                    <span><strong>Timeline:</strong> Mar - Jun 2025</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-width="1" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                                    </svg>
-                                    <span><strong>Role:</strong> Full-Stack Developer</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.83892 12.4543s1.24988-3.08822-.21626-5.29004C8.15656 4.96245 4.58671 4.10885 4.39794 4.2436c-.18877.13476-1.11807 3.32546.34803 5.52727 1.4661 2.20183 5.09295 2.68343 5.09295 2.68343Zm0 0C10.3389 13.4543 12 15 12 18v2c0-2-.4304-3.4188 2.0696-5.9188m0 0s-.4894-2.7888 1.1206-4.35788c1.6101-1.56907 4.4903-1.54682 4.6701-1.28428.1798.26254.4317 2.84376-1.0809 4.31786-1.61 1.5691-4.7098 1.3243-4.7098 1.3243Z"/>
-                                    </svg>
-                                    <span><strong>What I Learned:</strong> Building web applications using Laravel, Tailwind CSS, and RESTful APIs.</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m7.171 12.906-2.153 6.411 2.672-.89 1.568 2.34 1.825-5.183m5.73-2.678 2.154 6.411-2.673-.89-1.568 2.34-1.825-5.183M9.165 4.3c.58.068 1.153-.17 1.515-.628a1.681 1.681 0 0 1 2.64 0 1.68 1.68 0 0 0 1.515.628 1.681 1.681 0 0 1 1.866 1.866c-.068.58.17 1.154.628 1.516a1.681 1.681 0 0 1 0 2.639 1.682 1.682 0 0 0-.628 1.515 1.681 1.681 0 0 1-1.866 1.866 1.681 1.681 0 0 0-1.516.628 1.681 1.681 0 0 1-2.639 0 1.681 1.681 0 0 0-1.515-.628 1.681 1.681 0 0 1-1.867-1.866 1.681 1.681 0 0 0-.627-1.515 1.681 1.681 0 0 1 0-2.64c.458-.361.696-.935.627-1.515A1.681 1.681 0 0 1 9.165 4.3ZM14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
-                                    </svg>
-                                    <span><strong>My Impact:</strong> Helped develop responsive UI components and backend API features for the platform.</span>
-                                </div>
-                            </div>
+                <div class="w-full lg:w-1/2 mt-16 lg:mt-0 relative">
+                    <div class="relative flex justify-center lg:justify-end">
+                        <!-- Image Container with soft styling -->
+                        <div class="relative z-10 rounded-full overflow-hidden w-[300px] h-[300px] lg:w-[400px] lg:h-[400px] border-4 border-white shadow-2xl">
+                            <img src="dist/img/potoade.png" alt="Ade Siahaan" class="w-full h-full object-cover object-top" />
                         </div>
+                        <!-- Background Blob -->
+                        <span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 scale-150">
+                            <svg width="400" height="400" viewBox="0 0 292.5 292.5" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3" />
+                                    <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.1" />
+                                  </linearGradient>
+                                </defs>
+                                <path d="M146.25,274.6843101968989C180.19745057211148,272.61227728280096,211.89363693541208,259.9612079636146,236.78679095818993,236.78679095818993C262.7087521482059,212.65460032994787,284.3576556921751,181.66593989316232,284.2096761718858,146.25C284.0621494772881,110.94243488358805,261.32724682721573,81.10127414475599,236.03335370405776,56.46664629594223C211.14907738904284,32.230958917861486,180.9664883067105,10.719432928481806,146.25000000000003,11.88613342994359C112.33683042137801,13.025837181197968,85.80314724904818,37.82564192282397,62.30505070026809,62.305050700268055C39.445587137258855,86.11915631645434,20.511132512430464,113.39916458287813,17.27241160988342,146.24999999999997C13.67788783510873,182.70979770445484,17.982106370052385,222.70609051506793,43.94268337749687,248.55731662250307C69.86993084624271,274.3753535816112,109.72844340528482,276.91345748375016,146.25,274.6843101968989" fill="url(#gradient)" />
+                            </svg>
+                        </span>
                     </div>
-                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">SSC Balige</h3>
-                        <p class="font-medium text-base text-secondary">The website serves as a portal providing information about SSC Balige, featuring a discussion forum for students and tutors, a collection of learning materials organized by grade and subject with admin control for updates, as well as a secure role-based login system for students, tutors, and admins.</p>
                 </div>
-
-                <!-- card3 House Price Prediction -->
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="relative rounded-md shadow-md overflow-hidden group">
-                        <!-- Gambar -->
-                        <img src="dist/img/P3.png" alt="House Price Prediction"
-                            class="w-full transition duration-300 group-hover:blur-sm">
-                        <!-- Overlay Hover -->
-                        <div class="absolute inset-0 bg-primary bg-opacity-70 flex items-center justify-center 
-                                    opacity-0 group-hover:opacity-100 transition duration-300 text-dark p-4 text-left">
-                            <div class="space-y-2 text-sm md:text-base">
-                                <span>Teamwork assignment</span>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"/>
-                                        </svg>
-                                    <span><strong>Timeline:</strong> Apr - May 2025</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-width="1" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                                    </svg>
-                                    <span><strong>Role:</strong> Developer</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.83892 12.4543s1.24988-3.08822-.21626-5.29004C8.15656 4.96245 4.58671 4.10885 4.39794 4.2436c-.18877.13476-1.11807 3.32546.34803 5.52727 1.4661 2.20183 5.09295 2.68343 5.09295 2.68343Zm0 0C10.3389 13.4543 12 15 12 18v2c0-2-.4304-3.4188 2.0696-5.9188m0 0s-.4894-2.7888 1.1206-4.35788c1.6101-1.56907 4.4903-1.54682 4.6701-1.28428.1798.26254.4317 2.84376-1.0809 4.31786-1.61 1.5691-4.7098 1.3243-4.7098 1.3243Z"/>
-                                    </svg>
-                                    <span><strong>What I Learned:</strong> How to preprocess data and build machine learning models.</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m7.171 12.906-2.153 6.411 2.672-.89 1.568 2.34 1.825-5.183m5.73-2.678 2.154 6.411-2.673-.89-1.568 2.34-1.825-5.183M9.165 4.3c.58.068 1.153-.17 1.515-.628a1.681 1.681 0 0 1 2.64 0 1.68 1.68 0 0 0 1.515.628 1.681 1.681 0 0 1 1.866 1.866c-.068.58.17 1.154.628 1.516a1.681 1.681 0 0 1 0 2.639 1.682 1.682 0 0 0-.628 1.515 1.681 1.681 0 0 1-1.866 1.866 1.681 1.681 0 0 0-1.516.628 1.681 1.681 0 0 1-2.639 0 1.681 1.681 0 0 0-1.515-.628 1.681 1.681 0 0 1-1.867-1.866 1.681 1.681 0 0 0-.627-1.515 1.681 1.681 0 0 1 0-2.64c.458-.361.696-.935.627-1.515A1.681 1.681 0 0 1 9.165 4.3ZM14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
-                                    </svg>
-                                    <span><strong>My Impact:</strong> Helped improve model accuracy through data preprocessing and feature selection.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">House Price Prediction</h3>
-                        <p class="font-medium text-base text-secondary">Machine learning based system to predict house prices using an ensemble stacking approach with XGBoost, LightGBM, and CatBoost. The goal was to achieve accurate, data-driven predictions to support real estate decision-making.</p>
-                </div>
-
-                <!-- card1 connectalumni -->
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="relative rounded-md shadow-md overflow-hidden group">
-                        <!-- Gambar -->
-                        <img src="dist/img/P1.jpg" alt="Web Connect Alumni"
-                            class="w-full transition duration-300 group-hover:blur-sm">
-                        <!-- Overlay Hover -->
-                        <div class="absolute inset-0 bg-primary bg-opacity-70 flex items-center justify-center 
-                                    opacity-0 group-hover:opacity-100 transition duration-300 text-dark p-4 text-left">
-                            <div class="space-y-2 text-sm md:text-base">
-                                <span>Teamwork assignment</span>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"/>
-                                        </svg>
-                                    <span><strong>Timeline:</strong> Aug - Nov 2024</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-width="1" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                                    </svg>
-                                    <span><strong>Role:</strong> Full-Stack Developer</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.83892 12.4543s1.24988-3.08822-.21626-5.29004C8.15656 4.96245 4.58671 4.10885 4.39794 4.2436c-.18877.13476-1.11807 3.32546.34803 5.52727 1.4661 2.20183 5.09295 2.68343 5.09295 2.68343Zm0 0C10.3389 13.4543 12 15 12 18v2c0-2-.4304-3.4188 2.0696-5.9188m0 0s-.4894-2.7888 1.1206-4.35788c1.6101-1.56907 4.4903-1.54682 4.6701-1.28428.1798.26254.4317 2.84376-1.0809 4.31786-1.61 1.5691-4.7098 1.3243-4.7098 1.3243Z"/>
-                                    </svg>
-                                    <span><strong>What I Learned:</strong> Laravel MVC, Eloquent ORM, Blade, REST API, Tailwind CSS, Git, Composer, NPM.</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m7.171 12.906-2.153 6.411 2.672-.89 1.568 2.34 1.825-5.183m5.73-2.678 2.154 6.411-2.673-.89-1.568 2.34-1.825-5.183M9.165 4.3c.58.068 1.153-.17 1.515-.628a1.681 1.681 0 0 1 2.64 0 1.68 1.68 0 0 0 1.515.628 1.681 1.681 0 0 1 1.866 1.866c-.068.58.17 1.154.628 1.516a1.681 1.681 0 0 1 0 2.639 1.682 1.682 0 0 0-.628 1.515 1.681 1.681 0 0 1-1.866 1.866 1.681 1.681 0 0 0-1.516.628 1.681 1.681 0 0 1-2.639 0 1.681 1.681 0 0 0-1.515-.628 1.681 1.681 0 0 1-1.867-1.866 1.681 1.681 0 0 0-.627-1.515 1.681 1.681 0 0 1 0-2.64c.458-.361.696-.935.627-1.515A1.681 1.681 0 0 1 9.165 4.3ZM14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
-                                    </svg>
-                                    <span><strong>My Impact:</strong> Selected idea, developed & implemented features effectively.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Connect Alumni</h3>
-                        <p class="font-medium text-base text-secondary">A website that helps students or general users connect and strengthen relationships with alumni IT Del.</p>
-                    </div>
-
-                <!-- card2 Market Sistem -->
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="relative rounded-md shadow-md overflow-hidden group">
-                        <!-- Gambar -->
-                        <img src="dist/img/P2.png" alt="Market Sistem"
-                            class="w-full transition duration-300 group-hover:blur-sm">
-                        <!-- Overlay Hover -->
-                        <div class="absolute inset-0 bg-primary bg-opacity-70 flex items-center justify-center 
-                                    opacity-0 group-hover:opacity-100 transition duration-300 text-dark p-4 text-left">
-                            <div class="space-y-2 text-sm md:text-base">
-                                <span>Self initiated</span>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z"/>
-                                        </svg>
-                                    <span><strong>Timeline:</strong> Jun - Jul 2024</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <path stroke="currentColor" stroke-width="1" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                                    </svg>
-                                    <span><strong>Role:</strong>Full-Stack Developer</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.83892 12.4543s1.24988-3.08822-.21626-5.29004C8.15656 4.96245 4.58671 4.10885 4.39794 4.2436c-.18877.13476-1.11807 3.32546.34803 5.52727 1.4661 2.20183 5.09295 2.68343 5.09295 2.68343Zm0 0C10.3389 13.4543 12 15 12 18v2c0-2-.4304-3.4188 2.0696-5.9188m0 0s-.4894-2.7888 1.1206-4.35788c1.6101-1.56907 4.4903-1.54682 4.6701-1.28428.1798.26254.4317 2.84376-1.0809 4.31786-1.61 1.5691-4.7098 1.3243-4.7098 1.3243Z"/>
-                                    </svg>
-                                    <span><strong>What I Learned:</strong> I gained experience in developing a marketing system using Java, building user interfaces with JavaFX and SceneBuilder, and integrating MySQL for database management.</span>
-                                </div>
-                                <div class="flex items-center space-x-2">
-                                    <svg class="w-[25px] h-[25px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="m7.171 12.906-2.153 6.411 2.672-.89 1.568 2.34 1.825-5.183m5.73-2.678 2.154 6.411-2.673-.89-1.568 2.34-1.825-5.183M9.165 4.3c.58.068 1.153-.17 1.515-.628a1.681 1.681 0 0 1 2.64 0 1.68 1.68 0 0 0 1.515.628 1.681 1.681 0 0 1 1.866 1.866c-.068.58.17 1.154.628 1.516a1.681 1.681 0 0 1 0 2.639 1.682 1.682 0 0 0-.628 1.515 1.681 1.681 0 0 1-1.866 1.866 1.681 1.681 0 0 0-1.516.628 1.681 1.681 0 0 1-2.639 0 1.681 1.681 0 0 0-1.515-.628 1.681 1.681 0 0 1-1.867-1.866 1.681 1.681 0 0 0-.627-1.515 1.681 1.681 0 0 1 0-2.64c.458-.361.696-.935.627-1.515A1.681 1.681 0 0 1 9.165 4.3ZM14 9a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
-                                    </svg>
-                                    <span><strong>My Impact:</strong> contributed by developing features and creating the user interface.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Market Sistem</h3>
-                        <p class="font-medium text-base text-secondary">A Desktop Application designed to simplify sales tracking, product management, cashier operations, and revenue monitoring, with account and payment features included.</p>
-                </div>
-
-  
-            </div>
-        </div>    
-     </section>
-    <!-- project end -->
-
-    <!-- Certificates start -->
-     <section id="Certificates" class="container pt-20 pb-10">
-        <div class="w-full px-4 border-b-2 border-slate-400">
-            <div class="max-w-xl mb-3 border-s-slate-950">
-                <h4 class="font-bold uppercase text-left text-primary text-lg mb-2 px-4">Certificates</h4>
             </div>
         </div>
-        <div class="flex items-center justify-center mt-3">
-            <ul aria-label="Colored activity feed" role="feed" class="relative flex flex-col gap-12 py-12 pl-8 before:absolute before:top-0 before:left-8 before:h-full before:border before:-translate-x-1/2 before:border-slate-200 before:border-dashed after:absolute after:top-6 after:left-8 after:bottom-6 after:border after:-translate-x-1/2 after:border-slate-200 ">
-                <li role="article" class="relative pl-8 ">
-                    <span class="absolute left-0 z-10 flex items-center justify-center w-10 h-10 text-white -translate-x-1/2 rounded-full ring-2 ring-white bg-primary ">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Starship</title><path d="M15.521 9.62a1.057 1.057 0 11-2.115 0 1.057 1.057 0 012.115 0zM24 12c0 6.627-5.373 12-12 12-.35 0-.697-.015-1.04-.044 2.019-1.89 2.548-5.061 2.548-5.061l-3.226-1.053s-1.499 3.23-5.599 3.67A11.98 11.98 0 010 12C0 5.373 5.373 0 12 0s12 5.373 12 12zM8.628 6.606c-1.23-.13-1.885-.83-2.03-2.031-.142 1.159-.77 1.88-2.032 2.031 1.168.227 1.83.918 2.031 2.032-.02-1.154.666-1.825 2.031-2.032zm7.786 5.207c1.11-2.483.392-4.252-1.233-6.246-2.043 1.5-3.759 3.023-3.636 5.149-1.375.675-2.261 1.206-3.147 2.289l2.779 1.103-.368 1.267 3.637 1.062.443-1.181 2.825.651c.014-1.496-.38-3.097-1.3-4.094z"/></svg>
-                    </span>
-                    <div class="flex flex-col flex-1 gap-0">
-                        <a href="https://www.dicoding.com/certificates/L4PQ1LQE7XO1" class="hover:underline">
-                        <h4 class="text-base font-medium text-slate-700  ">
-                            Belajar Dasar Structured Query Language (SQL)</h4>
-                        <p class="text-sm text-slate-500  ">
-                            Dicoding <span class="mx-10 text-xs leading-5 text-sky-500">Feb
-                                Aug 12, 2024 - Aug 12, 2027</span></p>
-                        </a>
-                    </div>
-                </li>
-                <li role="article" class="relative pl-8 ">
-                    <span class="absolute left-0 z-10 flex items-center justify-center w-10 h-10 text-white -translate-x-1/2 rounded-full ring-2 ring-white bg-primary ">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Starship</title><path d="M15.521 9.62a1.057 1.057 0 11-2.115 0 1.057 1.057 0 012.115 0zM24 12c0 6.627-5.373 12-12 12-.35 0-.697-.015-1.04-.044 2.019-1.89 2.548-5.061 2.548-5.061l-3.226-1.053s-1.499 3.23-5.599 3.67A11.98 11.98 0 010 12C0 5.373 5.373 0 12 0s12 5.373 12 12zM8.628 6.606c-1.23-.13-1.885-.83-2.03-2.031-.142 1.159-.77 1.88-2.032 2.031 1.168.227 1.83.918 2.031 2.032-.02-1.154.666-1.825 2.031-2.032zm7.786 5.207c1.11-2.483.392-4.252-1.233-6.246-2.043 1.5-3.759 3.023-3.636 5.149-1.375.675-2.261 1.206-3.147 2.289l2.779 1.103-.368 1.267 3.637 1.062.443-1.181 2.825.651c.014-1.496-.38-3.097-1.3-4.094z"/></svg>
-                    </span>
-                    <div class="flex flex-col flex-1 gap-0">
-                        <a href="https://www.dicoding.com/certificates/QLZ97043MP5D" class="hover:underline">
-                        <h4 class="text-base font-medium text-slate-700  ">
-                            Belajar Dasar AI</h4>
-                        <p class="text-sm text-slate-500  ">
-                            Dicoding <span class="mx-10 text-xs leading-5 text-sky-500">Feb
-                                Aug 7, 2024 - Aug 7, 2027</span></p>
-                        </a>
-                    </div>
-                </li>
-                <li role="article" class="relative pl-8 ">
-                    <span class="absolute left-0 z-10 flex items-center justify-center w-10 h-10 text-white -translate-x-1/2 rounded-full ring-2 ring-white bg-primary ">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Starship</title><path d="M15.521 9.62a1.057 1.057 0 11-2.115 0 1.057 1.057 0 012.115 0zM24 12c0 6.627-5.373 12-12 12-.35 0-.697-.015-1.04-.044 2.019-1.89 2.548-5.061 2.548-5.061l-3.226-1.053s-1.499 3.23-5.599 3.67A11.98 11.98 0 010 12C0 5.373 5.373 0 12 0s12 5.373 12 12zM8.628 6.606c-1.23-.13-1.885-.83-2.03-2.031-.142 1.159-.77 1.88-2.032 2.031 1.168.227 1.83.918 2.031 2.032-.02-1.154.666-1.825 2.031-2.032zm7.786 5.207c1.11-2.483.392-4.252-1.233-6.246-2.043 1.5-3.759 3.023-3.636 5.149-1.375.675-2.261 1.206-3.147 2.289l2.779 1.103-.368 1.267 3.637 1.062.443-1.181 2.825.651c.014-1.496-.38-3.097-1.3-4.094z"/></svg>
-                    </span>
-                    <div class="flex flex-col flex-1 gap-0">
-                        <a href="https://www.hackerrank.com/certificates/iframe/832174694c63" class="hover:underline">
-                        <h4 class="text-base font-medium text-slate-700  ">
-                            Problem Solving (Basic)</h4>
-                        <p class="text-sm text-slate-500  ">
-                            HackerRank <span class="mx-10 text-xs leading-5 text-sky-500">Feb
-                                Aug 04, 2024</span></p>
-                        </a>
-                    </div>
-                </li>
-                <li role="article" class="relative pl-8 ">
-                    <span class="absolute left-0 z-10 flex items-center justify-center w-10 h-10 text-white -translate-x-1/2 rounded-full ring-2 ring-white bg-primary ">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Starship</title><path d="M15.521 9.62a1.057 1.057 0 11-2.115 0 1.057 1.057 0 012.115 0zM24 12c0 6.627-5.373 12-12 12-.35 0-.697-.015-1.04-.044 2.019-1.89 2.548-5.061 2.548-5.061l-3.226-1.053s-1.499 3.23-5.599 3.67A11.98 11.98 0 010 12C0 5.373 5.373 0 12 0s12 5.373 12 12zM8.628 6.606c-1.23-.13-1.885-.83-2.03-2.031-.142 1.159-.77 1.88-2.032 2.031 1.168.227 1.83.918 2.031 2.032-.02-1.154.666-1.825 2.031-2.032zm7.786 5.207c1.11-2.483.392-4.252-1.233-6.246-2.043 1.5-3.759 3.023-3.636 5.149-1.375.675-2.261 1.206-3.147 2.289l2.779 1.103-.368 1.267 3.637 1.062.443-1.181 2.825.651c.014-1.496-.38-3.097-1.3-4.094z"/></svg>
-                    </span>
-                    <div class="flex flex-col flex-1 gap-0">
-                        <a href="https://www.dicoding.com/certificates/MRZME786LPYQ" class="hover:underline">
-                        <h4 class="text-base font-medium text-slate-700  ">
-                            Belajar Dasar Pemrograman JavaScript</h4>
-                        <p class="text-sm text-slate-500  ">
-                            Dicoding <span class="mx-10 text-xs leading-5 text-sky-500">Feb
-                                Jun 29, 2024 - Jun 29, 2027</span></p>
-                        </a>
-                    </div>
-                </li>
-                <li role="article" class="relative pl-8 ">
-                    <span class="absolute left-0 z-10 flex items-center justify-center w-10 h-10 text-white -translate-x-1/2 rounded-full ring-2 ring-white bg-primary ">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Starship</title><path d="M15.521 9.62a1.057 1.057 0 11-2.115 0 1.057 1.057 0 012.115 0zM24 12c0 6.627-5.373 12-12 12-.35 0-.697-.015-1.04-.044 2.019-1.89 2.548-5.061 2.548-5.061l-3.226-1.053s-1.499 3.23-5.599 3.67A11.98 11.98 0 010 12C0 5.373 5.373 0 12 0s12 5.373 12 12zM8.628 6.606c-1.23-.13-1.885-.83-2.03-2.031-.142 1.159-.77 1.88-2.032 2.031 1.168.227 1.83.918 2.031 2.032-.02-1.154.666-1.825 2.031-2.032zm7.786 5.207c1.11-2.483.392-4.252-1.233-6.246-2.043 1.5-3.759 3.023-3.636 5.149-1.375.675-2.261 1.206-3.147 2.289l2.779 1.103-.368 1.267 3.637 1.062.443-1.181 2.825.651c.014-1.496-.38-3.097-1.3-4.094z"/></svg>
-                    </span>
-                    <div class="flex flex-col flex-1 gap-0">
-                        <a href="https://www.dicoding.com/certificates/MRZME68Y0PYQ" class="hover:underline">
-                        <h4 class="text-base font-medium text-slate-700  ">
-                            Belajar Dasar Pemrograman Web</h4>
-                        <p class="text-sm text-slate-500  ">
-                            Dicoding <span class="mx-10 text-xs leading-5 text-sky-500">Feb
-                                Jun 16, 2024 - Jun 16, 2027</span></p>
-                        </a>
-                    </div>
-                </li>
-                <li role="article" class="relative pl-8 ">
-                    <span class="absolute left-0 z-10 flex items-center justify-center w-10 h-10 text-white -translate-x-1/2 rounded-full ring-2 ring-white bg-primary ">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Starship</title><path d="M15.521 9.62a1.057 1.057 0 11-2.115 0 1.057 1.057 0 012.115 0zM24 12c0 6.627-5.373 12-12 12-.35 0-.697-.015-1.04-.044 2.019-1.89 2.548-5.061 2.548-5.061l-3.226-1.053s-1.499 3.23-5.599 3.67A11.98 11.98 0 010 12C0 5.373 5.373 0 12 0s12 5.373 12 12zM8.628 6.606c-1.23-.13-1.885-.83-2.03-2.031-.142 1.159-.77 1.88-2.032 2.031 1.168.227 1.83.918 2.031 2.032-.02-1.154.666-1.825 2.031-2.032zm7.786 5.207c1.11-2.483.392-4.252-1.233-6.246-2.043 1.5-3.759 3.023-3.636 5.149-1.375.675-2.261 1.206-3.147 2.289l2.779 1.103-.368 1.267 3.637 1.062.443-1.181 2.825.651c.014-1.496-.38-3.097-1.3-4.094z"/></svg>
-                    </span>
-                    <div class="flex flex-col flex-1 gap-0">
-                        <a href="https://www.dicoding.com/certificates/L4PQ1LQE7XO1" class="hover:underline">
-                        <h4 class="text-base font-medium text-slate-700  ">
-                            Memulai Pemrograman dengan Python</h4>
-                        <p class="text-sm text-slate-500  ">
-                            Dicoding <span class="mx-10 text-xs leading-5 text-sky-500">Feb
-                                Dec 31, 2023 - Dec 31, 2026</span></p>
-                        </a>
-                    </div>
-                </li>
-                <li role="article" class="relative pl-8 ">
-                    <span class="absolute left-0 z-10 flex items-center justify-center w-10 h-10 text-white -translate-x-1/2 rounded-full ring-2 ring-white bg-primary ">
-                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Starship</title><path d="M15.521 9.62a1.057 1.057 0 11-2.115 0 1.057 1.057 0 012.115 0zM24 12c0 6.627-5.373 12-12 12-.35 0-.697-.015-1.04-.044 2.019-1.89 2.548-5.061 2.548-5.061l-3.226-1.053s-1.499 3.23-5.599 3.67A11.98 11.98 0 010 12C0 5.373 5.373 0 12 0s12 5.373 12 12zM8.628 6.606c-1.23-.13-1.885-.83-2.03-2.031-.142 1.159-.77 1.88-2.032 2.031 1.168.227 1.83.918 2.031 2.032-.02-1.154.666-1.825 2.031-2.032zm7.786 5.207c1.11-2.483.392-4.252-1.233-6.246-2.043 1.5-3.759 3.023-3.636 5.149-1.375.675-2.261 1.206-3.147 2.289l2.779 1.103-.368 1.267 3.637 1.062.443-1.181 2.825.651c.014-1.496-.38-3.097-1.3-4.094z"/></svg>
-                    </span>
-                    <div class="flex flex-col flex-1 gap-0">
-                        <a href="https://www.dicoding.com/certificates/L4PQQQD9VPO1" class="hover:underline">
-                        <h4 class="text-base font-medium text-slate-700  ">
-                            Belajar Dasar Visualisasi Data</h4>
-                        <p class="text-sm text-slate-500  ">
-                            Dicoding <span class="mx-10 text-xs leading-5 text-sky-500">Feb
-                                Dec 31, 2023 - Dec 31, 2026</span></p>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-     </section>
-    <!-- Certificates end -->
+    </section>
+    <!-- Hero End -->
 
+    <!-- About Section Start -->
+    <section id="about" class="pt-20 pb-20 bg-white">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h4 class="font-bold uppercase text-blue-600 text-lg mb-8 tracking-widest text-center">About Me</h4>
+            <div class="flex flex-wrap lg:flex-nowrap gap-12">
+                <div class="w-full lg:w-1/2">
+                    <h3 class="font-bold text-2xl text-slate-900 mb-4">Education</h3>
+                    <div class="border-l-4 border-blue-600 pl-4 py-1 bg-slate-50 rounded-r-lg mb-6">
+                        <h5 class="font-semibold text-lg text-slate-800">Institut Teknologi Del</h5>
+                        <p class="text-sm text-slate-500">Bachelor of Information Systems (2022 - 2026)</p>
+                        <p class="text-sm font-medium text-blue-600 mt-1">GPA: 3.23 / 4.00</p>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed text-justify">
+                        During my studies, I learned about software development, software testing, databases, system analysis, and information technology. I worked on various academic projects that gave me hands-on experience in building and testing applications.
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/2">
+                    <h3 class="font-bold text-2xl text-slate-900 mb-4">Skills & Focus</h3>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Software Quality Assurance</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Software Testing</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Web Development</span>
+                    </div>
+                    <h5 class="font-semibold text-lg text-slate-800 mb-2">Technical Arsenal:</h5>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="border border-slate-300 text-slate-600 text-xs px-3 py-1 rounded-md shadow-sm">Java</span>
+                        <span class="border border-slate-300 text-slate-600 text-xs px-3 py-1 rounded-md shadow-sm">Python</span>
+                        <span class="border border-slate-300 text-slate-600 text-xs px-3 py-1 rounded-md shadow-sm">PHP / Laravel</span>
+                        <span class="border border-slate-300 text-slate-600 text-xs px-3 py-1 rounded-md shadow-sm">SQL / MySQL</span>
+                        <span class="border border-slate-300 text-slate-600 text-xs px-3 py-1 rounded-md shadow-sm">Postman</span>
+                        <span class="border border-slate-300 text-slate-600 text-xs px-3 py-1 rounded-md shadow-sm">Katalon</span>
+                        <span class="border border-slate-300 text-slate-600 text-xs px-3 py-1 rounded-md shadow-sm">Manual & Auto Testing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Work Experience Start -->
+    <section id="experience" class="pt-20 pb-20 bg-stone-50">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h4 class="font-bold uppercase text-blue-600 text-lg mb-8 tracking-widest text-center">Work Experience</h4>
+            <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+                <div class="flex justify-between items-center mb-4 border-b pb-4">
+                    <div>
+                        <h3 class="font-bold text-xl text-slate-900">Website Developer Intern</h3>
+                        <p class="font-medium text-blue-600">PT Telkom Indonesia ROC 1 - Medan</p>
+                    </div>
+                    <!-- Timeline date if known from CV, using generic if not -->
+                </div>
+                <ul class="list-disc list-outside ml-5 text-slate-600 space-y-2">
+                    <li>Developed a web application for monitoring recurring Wi-Fi outages using Laravel, SQL Server, and REST API.</li>
+                    <li>Performed unit testing to verify application functionality.</li>
+                    <li>Conducted User Acceptance Testing (UAT) to ensure the system met user requirements.</li>
+                    <li>Created user manual documentation for system usage.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Work Experience End -->
+
+    <!-- Projects Start -->
+    <section id="projects" class="pt-20 pb-20 bg-white">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h4 class="font-bold uppercase text-blue-600 text-lg mb-10 tracking-widest text-center">Featured Projects</h4>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1: SSC Balige -->
+                <div class="bg-stone-50 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 group border border-slate-100">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="dist/img/P4.jpg" alt="SSC Balige" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-blue-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4">
+                            <p class="text-white text-sm text-center">Performed Black Box, Functional, Integration, API testing (Postman), and System Testing for authentication, user management, and forum features.</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-slate-900">SSC Balige</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">QA / Tester</span>
+                        </div>
+                        <p class="text-sm text-slate-500 mb-4">Jun 2025 - Aug 2025 (Testing) | Teamwork</p>
+                        <p class="font-medium text-sm text-slate-600 mb-4 line-clamp-3">Online learning website designed to support students with learning materials and discussion features.</p>
+                        <a href="https://github.com/proyek-mahasiswa/psi-2425ge-04-ssc-balige" class="text-blue-600 font-medium text-sm hover:underline flex items-center">
+                            View Details 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Connect Alumni -->
+                <div class="bg-stone-50 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 group border border-slate-100">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="dist/img/P1.jpg" alt="Connect Alumni" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-blue-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4">
+                            <p class="text-white text-sm text-center">Developed using Laravel & Jetstream. Conducted system analysis and API testing using Postman and Katalon.</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-slate-900">Connect Alumni</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Backend / Analyst</span>
+                        </div>
+                        <p class="text-sm text-slate-500 mb-4">Aug 2024 - Dec 2024 | Teamwork</p>
+                        <p class="font-medium text-sm text-slate-600 mb-4 line-clamp-3">A website platform emphasizing MVC architecture and REST API that helps students connect with alumni IT Del.</p>
+                        <a href="https://github.com/mulyadiyaminsiahaan/ConnectAlumni" class="text-blue-600 font-medium text-sm hover:underline flex items-center">
+                            View Details 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Market Sistem -->
+                <div class="bg-stone-50 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition duration-300 group border border-slate-100">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="dist/img/P2.png" alt="Market Sistem" class="w-full h-full object-cover transition duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-blue-900 bg-opacity-80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 p-4">
+                            <p class="text-white text-sm text-center">Developed functional UIs using SceneBuilder, integrated MySQL DB, and tested application workflow.</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-bold text-xl text-slate-900">Market Sistem</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Software Dev</span>
+                        </div>
+                        <p class="text-sm text-slate-500 mb-4">Jun 2024 - Jul 2024 | Self-initiated</p>
+                        <p class="font-medium text-sm text-slate-600 mb-4 line-clamp-3">A desktop application using Java designed to manage sales transactions, products, and Point of Sale (POS) operations.</p>
+                        <a href="https://github.com/Adshnn/Merket-sistem" class="text-blue-600 font-medium text-sm hover:underline flex items-center">
+                            View Details 
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Projects End -->
+
+    <!-- Certificates Start -->
+    <section id="certificates" class="pt-20 pb-20 bg-stone-50">
+        <div class="container mx-auto px-6 lg:px-12">
+            <h4 class="font-bold uppercase text-blue-600 text-lg mb-10 tracking-widest text-center">Certifications</h4>
+            
+            <!-- Menggunakan Grid 3 kolom agar rapi dan muat banyak sertifikat -->
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- 1. Data Scientist BNSP (Dari CV) -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-600 flex-shrink-0">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/adesiahaan/overlay/Certifications/1265695550/treasury/?profileId=ACoAADqnnXoBUSGdkvBMMqr2alL0I6Ei0fxKYII" target="_blank" class="hover:text-blue-600 transition">
+                            <h4 class="text-base font-bold text-slate-800 leading-tight mb-1">Associate Data Scientist</h4>
+                        </a>
+                        <p class="text-sm text-slate-500">BNSP • Dec 2025 - Dec 2028</p>
+                    </div>
+                </div>
+
+                <!-- 2. TOEFL ITP (Dari CV) -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-600 flex-shrink-0">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <a href="https://www.linkedin.com/in/adesiahaan/overlay/Certifications/1207288617/treasury/?profileId=ACoAADqnnXoBUSGdkvBMMqr2alL0I6Ei0fxKYII" target="_blank" class="hover:text-blue-600 transition">
+                            <h4 class="text-base font-bold text-slate-800 leading-tight mb-1">TOEFL ITP (Score 547)</h4>
+                        </a>
+                        <p class="text-sm text-slate-500">English Proficiency • Aug 2025 - Aug 2027</p>
+                    </div>
+                </div>
+
+                <!-- 3. SQL (Dari HTML Lama & CV) -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-600 flex-shrink-0">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <a href="https://www.dicoding.com/certificates/L4PQ1LQE7XO1" target="_blank" class="hover:text-blue-600 transition">
+                            <h4 class="text-base font-bold text-slate-800 leading-tight mb-1">Belajar Dasar SQL</h4>
+                        </a>
+                        <p class="text-sm text-slate-500">Dicoding • Aug 2024 - Dec 2027</p>
+                    </div>
+                </div>
+
+                <!-- 4. Problem Solving Basic (Dari HTML Lama & CV) -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-600 flex-shrink-0">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <a href="https://www.hackerrank.com/certificates/iframe/832174694c63" target="_blank" class="hover:text-blue-600 transition">
+                            <h4 class="text-base font-bold text-slate-800 leading-tight mb-1">Problem Solving (Basic)</h4>
+                        </a>
+                        <p class="text-sm text-slate-500">HackerRank • Aug 2024</p>
+                    </div>
+                </div>
+
+                <!-- 5. Python (Dari HTML Lama & CV) -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-600 flex-shrink-0">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <a href="https://www.dicoding.com/certificates/KEXL88RN4ZG2" target="_blank" class="hover:text-blue-600 transition">
+                            <h4 class="text-base font-bold text-slate-800 leading-tight mb-1">Memulai Pemrograman Python</h4>
+                        </a>
+                        <p class="text-sm text-slate-500">Dicoding • Dec 2023 - Dec 2026</p>
+                    </div>
+                </div>
+
+                <!-- 6. Belajar Dasar AI (Dari HTML Lama) -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-600 flex-shrink-0">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <a href="https://www.dicoding.com/certificates/QLZ97043MP5D" target="_blank" class="hover:text-blue-600 transition">
+                            <h4 class="text-base font-bold text-slate-800 leading-tight mb-1">Belajar Dasar AI</h4>
+                        </a>
+                        <p class="text-sm text-slate-500">Dicoding • Aug 2024 - Aug 2027</p>
+                    </div>
+                </div>
+
+                <!-- 7. Data Visualization (Dari HTML Lama) -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-600 flex-shrink-0">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <a href="https://www.dicoding.com/certificates/L4PQQQD9VPO1" target="_blank" class="hover:text-blue-600 transition">
+                            <h4 class="text-base font-bold text-slate-800 leading-tight mb-1">Belajar Dasar Visualisasi Data</h4>
+                        </a>
+                        <p class="text-sm text-slate-500">Dicoding • Dec 2023 - Dec 2026</p>
+                    </div>
+                </div>
+
+                <!-- 8. JavaScript (Dari HTML Lama) -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-600 flex-shrink-0">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <a href="https://www.dicoding.com/certificates/MRZME786LPYQ" target="_blank" class="hover:text-blue-600 transition">
+                            <h4 class="text-base font-bold text-slate-800 leading-tight mb-1">Dasar Pemrograman JavaScript</h4>
+                        </a>
+                        <p class="text-sm text-slate-500">Dicoding • Jun 2024 - Jun 2027</p>
+                    </div>
+                </div>
+
+                <!-- 9. Web Programming (Dari HTML Lama) -->
+                <div class="bg-white p-5 rounded-lg shadow-sm border border-slate-100 flex items-start space-x-4">
+                    <div class="bg-blue-100 p-3 rounded-full text-blue-600 flex-shrink-0">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div>
+                        <a href="https://www.dicoding.com/certificates/MRZME68Y0PYQ" target="_blank" class="hover:text-blue-600 transition">
+                            <h4 class="text-base font-bold text-slate-800 leading-tight mb-1">Belajar Dasar Pemrograman Web</h4>
+                        </a>
+                        <p class="text-sm text-slate-500">Dicoding • Jun 2024 - Jun 2027</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Certificates End -->
 
     <!-- Footer Start -->
-     <footer class="bg-dark pt-20 pb-12">
-        <div class="container">
-            <div class="flex">
-                <div class="w-full ml-10 px-4 mb-12 text-slate-300 font-medium
-                mb:w-1/2">
-                    <h2 class="font-bold text-2xl text-white mb-2">Ade Siahaan</h2>
-                    <h3 class="font-bold text-1xl">Connect With Me</h3>
-                    <p>adshnn17@gmail.com</p>
+    <footer class="bg-slate-900 pt-16 pb-8">
+        <div class="container mx-auto px-6 lg:px-12">
+            <div class="flex flex-wrap justify-between items-center border-b border-slate-700 pb-10 mb-8">
+                <div class="w-full md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
+                    <h2 class="font-bold text-3xl text-white mb-2">Ade Siahaan</h2>
+                    <p class="text-slate-400 font-medium">adeyohanasiahaan@gmail.com</p>
                 </div>
-                <div class="w-full px-4 mb-12 md:w-1/2">
-                    <h3 class="font-semibold text-white text-xl mb-2 ">Tautan</h3>
-                    <ul>
-                        <li>
-                            <a href="#home" class="text-white inline-block text-base hover:text-blue-700 mb-1">Home</a>
-                        </li>
-                        <li>
-                            <a href="#projects" class="text-white inline-block text-base hover:text-blue-700 mb-1">Projects</a>
-                        </li>
-                        <li>
-                            <a href="#About" class="text-white inline-block text-base hover:text-blue-700 mb-1">About</a>
-                        </li>
-                    </ul>
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end space-x-6">
+                    <a href="https://www.instagram.com/adshn0/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 text-slate-300 hover:bg-blue-600 hover:text-white transition">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                    </a>
+                    <a href="https://github.com/Adshnn" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 text-slate-300 hover:bg-blue-600 hover:text-white transition">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/adesiahaan/" target="_blank" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 text-slate-300 hover:bg-blue-600 hover:text-white transition">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
                 </div>
             </div>
-            <div class="font-medium text-sm mb-1 text-white text-center">
-                <p>My Sosial Media</p>
-             </div>
-            <div class="mb-5 flex items-center justify-center">
-                <!-- Instagram -->
-                <a href="https://www.instagram.com/adshn0/" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
-                    <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>Instagram</title>
-                        <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"></path>
-                    </svg>
-                </a>
-
-                <a href="https://github.com/Adshnn" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
-                    <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>GitHub</title>
-                        <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.385.6.11.793-.262.793-.577 0-.284-.008-1.04-.012-2.04-3.348.727-4.055-1.613-4.055-1.613C4.46 18.187 3.711 17.8 3.711 17.8c-1.087-.744.083-.728.083-.728 1.205.084 1.838 1.24 1.838 1.24 1.07 1.834 2.805 1.304 3.48.997.108-.777.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.47-2.382 1.236-3.224-.124-.303-.536-1.523.117-3.176 0 0 1.007-.322 3.3 1.23.958-.267 1.98-.4 3-.405 1.02.005 2.042.138 3 .405 2.29-1.552 3.297-1.23 3.297-1.23.654 1.653.244 2.873.12 3.176.75.842 1.204 1.913 1.204 3.224 0 4.609-2.803 5.625-5.475 5.922.43.372.818 1.102.818 2.222 0 1.605-.014 2.892-.014 3.282 0 .32.193.693.802.575C20.566 21.798 24 17.303 24 12c0-6.627-5.373-12-12-12z"></path>
-                    </svg>
-                </a>
-
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/adesiahaan/" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
-                    <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <title>LinkedIn</title>
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path>
-                    </svg>
-                </a>
-            </div>
-            <!-- copyr -->
-             <div class="font-medium text-sm text-slate-500 text-center">
-                <p class="copyright">© 2025 Ade Siahaan</p>
-                <p>Made With 💖</p>
-             </div>
+            <div class="text-center text-slate-500 text-sm font-medium">
+                <p>&copy; 2026 Ade Siahaan. All rights reserved.</p>
             </div>
         </div>
-     </footer>
-    <!-- Footer end -->
-
+    </footer>
+    <!-- Footer End -->
 
     <script src="dist/js/script.js"></script>
-
 </body>
 </html>
